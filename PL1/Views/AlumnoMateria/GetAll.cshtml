@@ -1,0 +1,36 @@
+﻿@model ML.AlumnoMateria
+@{
+    ViewBag.Title = "GetAll";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Alumnos</h2>
+<div class="row">
+    <div class="col-md-12">
+        <h5>Seleccione un registro para editarlo o (+) para agregar...</h5>
+        <hr />
+    </div>
+</div>
+
+<table class="table table-bordered table-responsive">
+    <thead>
+        <tr>
+            <td>Editar</td>
+            <td>IdAlumno</td>
+            <td>Nombre</td>
+            <td>Apellido Paterno</td>
+            <td>Apellido Materno</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (ML.AlumnoMateria alumnomateria in Model.AlumnoMaterias)
+        {
+            <tr>
+                <td><a class="btn btn-warning bi bi-pencil" href="@Url.Action("MateriasAsignadas", "AlumnoMateria", new { IdAlumno = alumnomateria.Alumno.IdAlumno })"></a></td>
+                <td>@alumnomateria.Alumno.IdAlumno</td>
+                <td>@alumnomateria.Alumno.Nombre</td>
+                <td>@alumnomateria.Alumno.ApellidoPaterno</td>
+                <td>@alumnomateria.Alumno.ApellidoMaterno</td>
+            </tr>
+        }
+    </tbody>
+</table>

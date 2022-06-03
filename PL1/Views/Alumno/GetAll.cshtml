@@ -1,0 +1,40 @@
+﻿@model ML.Alumno
+@{
+    ViewBag.Title = "GetAll";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Alumnos</h2>
+<div class="row">
+    <div class="col-md-12">
+        <h5>Seleccione un registro para editarlo o (+) para agregar...</h5>
+        <hr />
+    </div>
+</div>
+<div style="float:right;">
+    @Html.ActionLink("Agregar", "Form", "Alumno", htmlAttributes: new { @class = "btn btn-success" })
+</div>
+<table class="table table-bordered table-responsive">
+    <thead>
+        <tr>
+            <td>Editar</td>
+            <td>IdAlumno</td>
+            <td>Nombre</td>
+            <td>Apellido Paterno</td>
+            <td>Apellido Materno</td>
+            <td>Eliminar</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (ML.Alumno alumno in Model.Alumnos)
+        {
+        <tr>
+            <td><a class="btn btn-warning bi bi-pencil" href="@Url.Action("Form", "Alumno", new { IdAlumno = alumno.IdAlumno })"></a></td>
+            <td>@alumno.IdAlumno</td>
+            <td>@alumno.Nombre</td>
+            <td>@alumno.ApellidoPaterno</td>
+            <td>@alumno.ApellidoMaterno</td>
+            <td><a class="btn btn-danger bi bi-trash3-fill" href="@Url.Action("Delete", "Alumno", new { IdAlumno = alumno.IdAlumno})" onclick="return confirm('Estas seguro que deseas eliminar este Alumno?');"></a></td>
+        </tr>
+        }
+    </tbody>
+</table>
