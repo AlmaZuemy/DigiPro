@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AAnayaDigiProModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Alumno">
+    <Key>
+      <PropertyRef Name="IdAlumno" />
+    </Key>
+    <Property Name="IdAlumno" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ApellidoPaterno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ApellidoMaterno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="AlumnoMateria">
+    <Key>
+      <PropertyRef Name="IdAlumnoMateria" />
+      <PropertyRef Name="IdAlumno" />
+      <PropertyRef Name="IdMateria" />
+    </Key>
+    <Property Name="IdAlumnoMateria" Type="Int32" Nullable="false" />
+    <Property Name="IdAlumno" Type="Int32" Nullable="false" />
+    <Property Name="IdMateria" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Materia">
+    <Key>
+      <PropertyRef Name="IdMateria" />
+    </Key>
+    <Property Name="IdMateria" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Costo" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityContainer Name="AAnayaDigiProEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Alumnoes" EntityType="Self.Alumno" />
+    <EntitySet Name="AlumnoMaterias" EntityType="Self.AlumnoMateria" />
+    <EntitySet Name="Materias" EntityType="Self.Materia" />
+    <FunctionImport Name="AlumnoAdd">
+      <Parameter Name="Nombre" Mode="In" Type="String" />
+      <Parameter Name="ApellidoPaterno" Mode="In" Type="String" />
+      <Parameter Name="ApellidoMaterno" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="AlumnoDelete">
+      <Parameter Name="IdAlumno" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="AlumnoGetAll" ReturnType="Collection(AAnayaDigiProModel.AlumnoGetAll_Result)" />
+    <FunctionImport Name="AlumnoGetById" ReturnType="Collection(AAnayaDigiProModel.AlumnoGetById_Result)">
+      <Parameter Name="IdAlumno" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="AlumnoUpdate">
+      <Parameter Name="IdAlumno" Mode="In" Type="Int32" />
+      <Parameter Name="Nombre" Mode="In" Type="String" />
+      <Parameter Name="ApellidoPaterno" Mode="In" Type="String" />
+      <Parameter Name="ApellidoMaterno" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="MateriaAdd">
+      <Parameter Name="Nombre" Mode="In" Type="String" />
+      <Parameter Name="Costo" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="MateriaDelete">
+      <Parameter Name="IdMateria" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="MateriaGetAll" ReturnType="Collection(AAnayaDigiProModel.MateriaGetAll_Result)" />
+    <FunctionImport Name="MateriaGetById" ReturnType="Collection(AAnayaDigiProModel.MateriaGetById_Result)">
+      <Parameter Name="IdMateria" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="MateriaUpdate">
+      <Parameter Name="IdMateria" Mode="In" Type="Int32" />
+      <Parameter Name="Nombre" Mode="In" Type="String" />
+      <Parameter Name="Costo" Mode="In" Type="Decimal" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="AlumnoGetAll_Result">
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ApellidoPaterno" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ApellidoMaterno" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="AlumnoGetById_Result">
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ApellidoPaterno" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ApellidoMaterno" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="MateriaGetAll_Result">
+    <Property Type="Int32" Name="IdMateria" Nullable="false" />
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="50" />
+    <Property Type="Decimal" Name="Costo" Nullable="true" Precision="18" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="MateriaGetById_Result">
+    <Property Type="Int32" Name="IdMateria" Nullable="false" />
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="50" />
+    <Property Type="Decimal" Name="Costo" Nullable="true" Precision="18" Scale="2" />
+  </ComplexType>
+</Schema>

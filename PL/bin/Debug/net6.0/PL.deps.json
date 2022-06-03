@@ -1,0 +1,85 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "PL/1.0.0": {
+        "dependencies": {
+          "BL": "1.0.0",
+          "ML": "1.0.0"
+        },
+        "runtime": {
+          "PL.dll": {}
+        }
+      },
+      "BL/1.0.0": {
+        "dependencies": {
+          "DL": "1.0.0",
+          "DL_EF": "1.0.0",
+          "ML": "1.0.0"
+        },
+        "runtime": {
+          "BL.dll": {}
+        }
+      },
+      "DL/1.0.0": {
+        "runtime": {
+          "DL.dll": {}
+        }
+      },
+      "DL_EF/1.0.0": {
+        "runtime": {
+          "DL_EF.dll": {}
+        }
+      },
+      "ML/1.0.0": {
+        "runtime": {
+          "ML.dll": {}
+        }
+      },
+      "EntityFramework/6.0.0.0": {
+        "runtime": {
+          "EntityFramework.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.400.420.21404"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DL_EF/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ML/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EntityFramework/6.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

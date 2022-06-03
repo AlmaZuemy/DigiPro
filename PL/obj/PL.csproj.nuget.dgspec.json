@@ -1,0 +1,146 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ALIEN 14\\Documents\\Alma Zuemy Anaya Manzanero\\AAnayaPruebaDigiPro\\PL\\PL.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ALIEN 14\\Documents\\Alma Zuemy Anaya Manzanero\\AAnayaPruebaDigiPro\\BL\\BL.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ALIEN 14\\Documents\\Alma Zuemy Anaya Manzanero\\AAnayaPruebaDigiPro\\BL\\BL.csproj",
+        "projectName": "BL",
+        "projectPath": "C:\\Users\\ALIEN 14\\Documents\\Alma Zuemy Anaya Manzanero\\AAnayaPruebaDigiPro\\BL\\BL.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\ALIEN 14\\Documents\\Alma Zuemy Anaya Manzanero\\AAnayaPruebaDigiPro\\DL\\DL.csproj": {
+                "projectPath": "C:\\Users\\ALIEN 14\\Documents\\Alma Zuemy Anaya Manzanero\\AAnayaPruebaDigiPro\\DL\\DL.csproj"
+              },
+              "C:\\Users\\ALIEN 14\\Documents\\Alma Zuemy Anaya Manzanero\\AAnayaPruebaDigiPro\\DL_EF\\DL_EF.csproj": {
+                "projectPath": "C:\\Users\\ALIEN 14\\Documents\\Alma Zuemy Anaya Manzanero\\AAnayaPruebaDigiPro\\DL_EF\\DL_EF.csproj"
+              },
+              "C:\\Users\\ALIEN 14\\Documents\\Alma Zuemy Anaya Manzanero\\AAnayaPruebaDigiPro\\ML\\ML.csproj": {
+                "projectPath": "C:\\Users\\ALIEN 14\\Documents\\Alma Zuemy Anaya Manzanero\\AAnayaPruebaDigiPro\\ML\\ML.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\ALIEN 14\\Documents\\Alma Zuemy Anaya Manzanero\\AAnayaPruebaDigiPro\\DL\\DL.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ALIEN 14\\Documents\\Alma Zuemy Anaya Manzanero\\AAnayaPruebaDigiPro\\DL\\DL.csproj",
+        "projectName": "DL",
+        "projectPath": "C:\\Users\\ALIEN 14\\Documents\\Alma Zuemy Anaya Manzanero\\AAnayaPruebaDigiPro\\DL\\DL.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\ALIEN 14\\Documents\\Alma Zuemy Anaya Manzanero\\AAnayaPruebaDigiPro\\DL_EF\\DL_EF.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ALIEN 14\\Documents\\Alma Zuemy Anaya Manzanero\\AAnayaPruebaDigiPro\\DL_EF\\DL_EF.csproj",
+        "projectName": "DL_EF",
+        "projectPath": "C:\\Users\\ALIEN 14\\Documents\\Alma Zuemy Anaya Manzanero\\AAnayaPruebaDigiPro\\DL_EF\\DL_EF.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\ALIEN 14\\Documents\\Alma Zuemy Anaya Manzanero\\AAnayaPruebaDigiPro\\ML\\ML.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ALIEN 14\\Documents\\Alma Zuemy Anaya Manzanero\\AAnayaPruebaDigiPro\\ML\\ML.csproj",
+        "projectName": "ML",
+        "projectPath": "C:\\Users\\ALIEN 14\\Documents\\Alma Zuemy Anaya Manzanero\\AAnayaPruebaDigiPro\\ML\\ML.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\ALIEN 14\\Documents\\Alma Zuemy Anaya Manzanero\\AAnayaPruebaDigiPro\\PL\\PL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ALIEN 14\\Documents\\Alma Zuemy Anaya Manzanero\\AAnayaPruebaDigiPro\\PL\\PL.csproj",
+        "projectName": "PL",
+        "projectPath": "C:\\Users\\ALIEN 14\\Documents\\Alma Zuemy Anaya Manzanero\\AAnayaPruebaDigiPro\\PL\\PL.csproj",
+        "packagesPath": "C:\\Users\\ALIEN 14\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ALIEN 14\\Documents\\Alma Zuemy Anaya Manzanero\\AAnayaPruebaDigiPro\\PL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ALIEN 14\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://packages.nuget.org/v1/FeedService.svc": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\ALIEN 14\\Documents\\Alma Zuemy Anaya Manzanero\\AAnayaPruebaDigiPro\\BL\\BL.csproj": {
+                "projectPath": "C:\\Users\\ALIEN 14\\Documents\\Alma Zuemy Anaya Manzanero\\AAnayaPruebaDigiPro\\BL\\BL.csproj"
+              },
+              "C:\\Users\\ALIEN 14\\Documents\\Alma Zuemy Anaya Manzanero\\AAnayaPruebaDigiPro\\ML\\ML.csproj": {
+                "projectPath": "C:\\Users\\ALIEN 14\\Documents\\Alma Zuemy Anaya Manzanero\\AAnayaPruebaDigiPro\\ML\\ML.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
